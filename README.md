@@ -1,24 +1,27 @@
-﻿# KlesLwR Universal updates
+# KlesLwR Universal
 
-Public release host for **KlesLwR Universal** (Tauri) Windows installers.
+**KlesLwR** is a gaming macro app for Windows — smoother movement, combat macros, and quick keybinds built for games like Roblox fighting titles.
 
-This is separate from classic WPF releases:
-- WPF: `Rofix033034/KlesLwRdesktopmacroupdates`
-- Universal (this repo): `Rofix033034/KlesLwRuniversalupdates`
+This repository hosts **Universal** release downloads (the light, newer build).
 
-## How to publish a build
+## What’s Universal?
 
-1. Build Universal: `npm run build` in `KlesLwR_Universal`
-2. Upload the NSIS installer from `src-tauri/target/release/bundle/nsis/` as a GitHub Release asset
-   - Prefer name like `KlesLwR_1.3.4_x64-setup.exe`
-3. In license admin → System → **Universal** tab:
-   - Repo: `Rofix033034/KlesLwRuniversalupdates`
-   - Asset: your setup exe name
-   - **Update Configuration** → **Sync from GitHub**
-4. Toggle **Force update** ON only when you want to lock old clients
+- Light single-EXE / installer build (~24 MB)
+- Core macros + Discord login
+- Faster to download and update than the classic desktop build
 
-## Crash / bug logs
+## Download
 
-Clients POST to `https://api.kleslwr.com/api/v1/crash-reports`.
-The crash-reports worker forwards embeds to Discord via secret `DISCORD_CRASH_WEBHOOK_URL`.
-Universal reports include `product: "universal"` so they are labeled separately from WPF.
+Get the latest Universal build from [Releases](https://github.com/Rofix033034/KlesLwRuniversalupdates/releases), or from the official site:
+
+**https://kleslwr.com**
+
+## Classic build
+
+Prefer the older full desktop app (macro editor, overlays, full toolset)?  
+That’s **Classic WPF**, published separately: [KlesLwRdesktopmacroupdates](https://github.com/Rofix033034/KlesLwRdesktopmacroupdates).
+
+## Support
+
+- Website: https://kleslwr.com  
+- Discord: join from the site or app for help, updates, and community macros
